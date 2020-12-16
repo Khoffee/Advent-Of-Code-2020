@@ -30,17 +30,32 @@ print("The buses after")
 print(departures.index("37") - departures.index("787"))
 print(departures.index("29") - departures.index("787"))
 
-
 t = 0
 while True:
-    t += 787
-    if ((t % 17 == 14) and (t % 41 == 0) and (t % 523 == 31) and (t % 19 == 12) and (t % 23 == 8) and (t + 6)%37==0):
+    t += (787 * 41 * 13 * 29)
+    if ((t % 17 == 14) and (t % 523 == 31) and (t % 19 == 12) and (t % 23 == 8) and (t + 6)%37==0):
         break
-    if (t > 100000000000):
-        print("test123")
 
 print(t - 48)
+
+# t = 0
+# while True:
+#     t += 12164659
+#     if ((t % 17 == 14) and (t % 523 == 31) and (t % 19 == 12) and (t % 23 == 8) and (t + 6)%37==0):
+#         break
+
+# print(t)
+# print(t - 48)
 # print(t-3)
+
+# print(departures.index("41") - departures.index("17"))
+# print(departures.index("523") - departures.index("17"))
+# print(departures.index("13") - departures.index("17"))
+# print(departures.index("19") - departures.index("17"))
+# print(departures.index("23") - departures.index("17"))
+# print(departures.index("787") - departures.index("17"))
+# print(departures.index("37") - departures.index("17"))
+# print(departures.index("29") - departures.index("17"))
 
 # bestBus = 15015935
 # for bus in buses:
